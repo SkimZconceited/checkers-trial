@@ -1,0 +1,52 @@
+# General
+node_modules/
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+Thumbs.db
+
+# React-specific (create-react-app)
+/build
+/public
+
+# Flask-specific
+__pycache__/
+instance/
+.webassets-cache
+*.py[cod]
+*.db
+*.sqlite
+venv/
+.env
+.mypy_cache/
+.coverage
+htmlcov/
+dist/
+*.egg-info/
+.cache
+.pytest_cache/
+celerybeat-schedule
+celerybeat.pid
+
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.dbq
