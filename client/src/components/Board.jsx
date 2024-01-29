@@ -4,18 +4,26 @@ function Board() {
   // const [board, setBoard] = useState([])
 
   useEffect(() => {
-    fetch("/")
-      .then((res) => {
-        if (!res.ok) {
+    fetch("/", {
+      method: "POST", // Specify the method as POST
+      headers: {
+        "Content-Type": "application/json", // Set the content type header to indicate the format of the data being sent
+        // Include other headers as needed
+      },
+      body: JSON.stringify({
+      }),
+    })
+      .then((response) => {
+        if (!response.ok) {
           throw new Error("Network response was not ok");
         }
-        return res.json();
+        return response.json(); // Parsing the response as JSON
       })
-      .then((server_board) => {
-        console.log(server_board);
+      .then((data) => {
+        console.log(data); // Handling the JSON data
       })
       .catch((error) => {
-        console.error("Fetch error:", error);
+        console.error("There was a problem with the fetch operation:", error);
       });
   }, []);
 
