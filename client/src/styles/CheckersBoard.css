@@ -1,0 +1,40 @@
+/* CheckersBoard.css */
+.board {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .cell {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cell:nth-child(odd) {
+    background-color: #f0d9b5; /* light brown */
+  }
+  
+  .cell:nth-child(even) {
+    background-color: #b58863; /* dark brown */
+  }
+  
+  .piece {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .piece.W {
+    background-color: white;
+  }
+  
+  .piece.B {
+    background-color: black;
+  }

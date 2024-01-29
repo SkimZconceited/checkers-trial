@@ -28,6 +28,10 @@ function Board() {
       });
   }, []);
 
+  if (!board || board.length === 0) {
+    return <div>Loading board...</div>; // or any other fallback UI
+  }
+
 //   console.log(board, 'backend');
   const fe_board = board.board;
 //   const verticalAxis = 
@@ -35,7 +39,7 @@ function Board() {
 
   return (
     <div className="board">
-        {fe_board && <CheckersBoard fe_board={fe_board} />}
+        {fe_board && <CheckersBoard board={fe_board} />}
     </div>
   )
 }
