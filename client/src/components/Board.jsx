@@ -39,7 +39,7 @@ function Board() {
 
   return (
     <div className="board">
-        {fe_board && <CheckersBoard board={fe_board} />}
+        {fe_board && <CheckersBoard board={fe_board} setBoard={setBoard} />}
     </div>
   )
 }
