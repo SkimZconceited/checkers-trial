@@ -11,7 +11,7 @@ CORS(app)
 # db = SQLAlchemy(app)
 # migrate = Migrate(app, db)
 
-@app.route('/', methods=['POST'])
+@app.route('/', methods=['POST']) #
 def home():
     
     board = {
